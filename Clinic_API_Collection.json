@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "80a045ae-9461-42b8-8415-e0a03e9afbe9",
+		"name": "Clinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40767755",
+		"_collection_link": "https://karmaa-lab-backend-5182.postman.co/workspace/Karmaa-Lab-BACKEND-Workspace~f5892b71-36fb-487d-8085-8f62ea36d478/collection/40767755-80a045ae-9461-42b8-8415-e0a03e9afbe9?action=share&source=collection_link&creator=40767755"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{company_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abhinav\",\n    \"email\": \"abhinav@gmail.com\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abhinav\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/login/"
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NDU3ODY5MSwiaWF0IjoxNzU0NDkyMjkxLCJqdGkiOiI3OWQwMTY5NmFmMDM0ZjM0YTU3MGE0YzQxYWJiZWYzMSIsInVzZXJfaWQiOiI2In0.xEJPrOQ708typkCTF5eH6yMAq_YJdvjIRBiTS0eDW38\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/token/refresh/"
+			},
+			"response": []
+		},
+		{
+			"name": "Doctors List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NDY3NTgxLCJpYXQiOjE3NTQ0NjcyODEsImp0aSI6Ijg1NWYzNWRiNDQ1ZTQ5Y2ViYjcxY2NlNzBlY2RmYzA0IiwidXNlcl9pZCI6IjEifQ.IIqmd-mQXwaqGn6q_L5jjOqqqUuaB-BXn_RGNbsefAQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abhinav\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/doctors/"
+			},
+			"response": []
+		},
+		{
+			"name": "Appointments List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NDY3NTgxLCJpYXQiOjE3NTQ0NjcyODEsImp0aSI6Ijg1NWYzNWRiNDQ1ZTQ5Y2ViYjcxY2NlNzBlY2RmYzA0IiwidXNlcl9pZCI6IjEifQ.IIqmd-mQXwaqGn6q_L5jjOqqqUuaB-BXn_RGNbsefAQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/doctors/"
+			},
+			"response": []
+		},
+		{
+			"name": "Appointment Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NDkzNzc4LCJpYXQiOjE3NTQ0OTM0NzgsImp0aSI6ImQ3MzFkMGFjYzkzZDQzMzI4OWU2Y2EwMmE1Y2QxNWVhIiwidXNlcl9pZCI6IjYifQ.xcR935DA1SLOz5TB89lp_PYVEDChLaXxx9AopNe_nf8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"doctor\": 1,\n  \"appointment_date\": \"2025-08-07T14:30:00Z\",\n  \"patient_name\":\"abhi\",\n  \"age\":\"25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base}}api/users/appointments/create/"
+			},
+			"response": []
+		}
+	]
+}
