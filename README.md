@@ -163,16 +163,17 @@ After logging in, include the access token in your requests:
 ```
 Authorization: Bearer your_access_token_here
 ```
-
 ---
 
 ## Screenshots
 
-The following screenshots demonstrate the application's functionality (available in the `screenshots/` folder):
+The following screenshots demonstrate the application's functionality:
 
-- **User Registration and Login**: Shows the authentication interface
-- **Doctor List**: Displays available doctors with their information
+- **Dashboard**: Shows user dashboard interface
+<img width="1844" height="983" alt="Screenshot from 2025-08-06 22-33-24" src="https://github.com/user-attachments/assets/9785d184-00d2-4fa9-ad04-4070f639aad1" />
+
 - **Appointment Booking**: Demonstrates the appointment scheduling process
+<img width="1850" height="984" alt="Screenshot from 2025-08-06 22-34-51" src="https://github.com/user-attachments/assets/10a86873-b699-47f4-a7c0-c2c7da8aaa8f" />
 
 ---
 
