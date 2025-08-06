@@ -56,7 +56,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NDU3ODY5MSwiaWF0IjoxNzU0NDkyMjkxLCJqdGkiOiI3OWQwMTY5NmFmMDM0ZjM0YTU3MGE0YzQxYWJiZWYzMSIsInVzZXJfaWQiOiI2In0.xEJPrOQ708typkCTF5eH6yMAq_YJdvjIRBiTS0eDW38\"\n}",
+					"raw": "{\n    \"refresh\": \"Token"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -76,7 +76,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NDY3NTgxLCJpYXQiOjE3NTQ0NjcyODEsImp0aSI6Ijg1NWYzNWRiNDQ1ZTQ5Y2ViYjcxY2NlNzBlY2RmYzA0IiwidXNlcl9pZCI6IjEifQ.IIqmd-mQXwaqGn6q_L5jjOqqqUuaB-BXn_RGNbsefAQ"
+						"token": "Token"
 					}
 				},
 				"method": "GET",
@@ -103,7 +103,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NDY3NTgxLCJpYXQiOjE3NTQ0NjcyODEsImp0aSI6Ijg1NWYzNWRiNDQ1ZTQ5Y2ViYjcxY2NlNzBlY2RmYzA0IiwidXNlcl9pZCI6IjEifQ.IIqmd-mQXwaqGn6q_L5jjOqqqUuaB-BXn_RGNbsefAQ"
+						"token":"Token"
 					}
 				},
 				"method": "GET",
