@@ -1,5 +1,3 @@
-> This project is under development📈
-
 # Clinic Management System
 
 A full-stack Clinic Management System built with **Django (backend)** and **React (frontend)**.  
